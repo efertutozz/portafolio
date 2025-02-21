@@ -2,20 +2,32 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+ color: white;
+ background-color: rgba(10, 25, 47, 1);
   font-family: Arial, Helvetica, sans-serif;
+}
+.bg-fondo{
+  background-color: rgba(30, 55, 87, 1)
+}
+
+.color-letras-principales{
+  color:rgba(0, 255, 255, 1) 
+}
+.otro-fondo{
+  background: linear-gradient(to top, rgba(80, 130, 180, 1), rgba(30, 55, 87, 1));
+
+}
+.fondo-revez{
+  background: linear-gradient(to bottom, rgba(30, 55, 87, 1), rgba(80, 130, 180, 1));
+
+}
+.border-foto {
+  border-color: rgba(0, 255, 255, 0.4) 
+}
+
+.ho-azul-marino-60:hover {
+  background-color: hsl(224, 55%, 60%);
 }
