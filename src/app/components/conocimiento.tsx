@@ -7,11 +7,11 @@ function Conocimiento() {
   return (
     <motion.section
       id="conocimiento"
-      className="mx-auto mt-4 bg-fondo rounded-3xl md:mx-24 xl:mx-80 md:mt-6 p-6 shadow-lg max-h-[400px] overflow-y-auto"
+      className="mx-6 mt-10 md:mt-14 bg-fondo rounded-3xl md:mx-24 xl:mx-80  p-6 shadow-lg max-h-[400px] overflow-y-auto"
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: false }}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 1 }}
     >
       <h3 className="  text-center text-xl pt-4 mt-4 color-letras-principales md:text-2xl">
         Conocimiento
@@ -20,6 +20,7 @@ function Conocimiento() {
         <motion.div
           whileHover={{ scale: 1.1, rotate: -3 }}
           id="java"
+          whileTap={{ scale: 1.5 }}
           className="justify-self-center flex flex-col"
         >
           <Java></Java>
@@ -27,6 +28,7 @@ function Conocimiento() {
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.1, rotate: 3 }}
+          whileTap={{ scale: 1.5 }}
           id="c#"
           className="justify-self-center flex flex-col items-center"
         >
@@ -35,6 +37,7 @@ function Conocimiento() {
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.1, rotate: 3 }}
+          whileTap={{ scale: 1.5 }}
           id="python"
           className="justify-self-center flex flex-col  mt-3 lg:mt-0"
         >
@@ -43,6 +46,7 @@ function Conocimiento() {
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.1, rotate: -3 }}
+          whileTap={{ scale: 1.5 }}
           id="php"
           className="justify-self-center flex mt-3 flex-col lg:m-6"
         >
@@ -51,6 +55,7 @@ function Conocimiento() {
         </motion.div>
         <motion.div
           whileHover={{ scale: 1.1, rotate: 3 }}
+          whileTap={{ scale: 1.5 }}
           id="windows"
           className="justify-self-center mt-3 flex flex-col items-center lg:m-6"
         >
@@ -58,6 +63,7 @@ function Conocimiento() {
           Server Windows
         </motion.div>
         <motion.div
+          whileTap={{ scale: 1.5 }}
           whileHover={{ scale: 1.1, rotate: 3 }}
           id="linux"
           className="justify-self-center mt-3 flex flex-col items-center lg:m-6"

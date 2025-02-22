@@ -1,14 +1,22 @@
+"use client";
+import { motion } from "framer-motion";
 import React from "react";
 import { Nextjsicono, Postgree, Prisma } from "../iconos/svg";
 import Turismo from "../imagenes/turismo.webp";
 import Image from "next/image";
 function Proyectos() {
   return (
-    <section id="proyectos">
-      <h3 className=" mt-12  md:mt-28 text-center mb-10  text-xl md:text-2xl">
+    <motion.section
+      id="proyectos"
+      initial={{ opacity: 0, rotate: -10 }}
+      whileInView={{ opacity: 1, rotate: 0 }}
+      transition={{ duration: 1, ease: "easeInOut" }}
+      viewport={{ once: false }}
+    >
+      <h3 className=" mx-6 mt-10 md:mt-14 text-center mb-10  text-xl md:text-2xl">
         Proyecto
       </h3>
-      <div className="flex justify-center  mt-10 bg-fondo rounded-3xl md:mx-24 xl:mx-80 md:mt-16 ">
+      <div className=" mx-6  md:mt-14 flex justify-center  mt-10 bg-fondo rounded-3xl md:mx-24 xl:mx-80  ">
         <div className="mx-3 rounded  overflow-hidden shadow-lg">
           <div className="px-6 py-4 ">
             <div className="font-bold text-lg text-center   mb-2 color-letras-principales">
@@ -63,7 +71,7 @@ function Proyectos() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

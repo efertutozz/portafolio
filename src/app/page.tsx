@@ -26,8 +26,10 @@ export default function Home() {
 
       <footer>
         {" "}
-        <div id="linkedin">
-          <Linkedin></Linkedin>
+        <div id="linkedin " className="flex justify-center mt-10">
+          <a href="https://www.linkedin.com/in/fernando-whiteley-151aa92a3/">
+            <Linkedin></Linkedin>
+          </a>
         </div>
       </footer>
     </div>

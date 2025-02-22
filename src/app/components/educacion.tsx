@@ -1,14 +1,20 @@
+"use client";
 import React from "react";
+import { motion } from "motion/react";
 
 function Educacion() {
   return (
-    <section
+    <motion.section
       id="educacion"
-      className="mx-auto mt-4 bg-fondo rounded-3xl md:mx-24 xl:mx-80 md:mt-6 "
+      initial={{ opacity: 0, filter: "blur(10px)" }}
+      whileInView={{ opacity: 1, filter: "blur(0px)" }}
+      transition={{ duration: 1.5 }}
+      viewport={{ once: false }}
+      className="mx-6 mt-10 md:mt-14 bg-fondo rounded-3xl md:mx-24 xl:mx-80 "
     >
       <div className="max-w-lg mx-auto p-6 bg-fondo rounded-2xl shadow-lg">
-        <h2 className="text-2xl font-bold text-center color-letras-principales mb-4">
-          🎓 Educación
+        <h2 className="text-xl font-bold text-center color-letras-principales  md:text-2xl mb-4">
+          Educación
         </h2>
 
         <div className="space-y-4 text-white">
@@ -37,7 +43,7 @@ function Educacion() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 

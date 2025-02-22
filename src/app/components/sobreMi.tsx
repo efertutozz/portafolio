@@ -1,14 +1,24 @@
+"use client";
 import React from "react";
-
+import { motion } from "framer-motion";
 function SobreMi() {
   return (
-    <section
+    <motion.section
+      initial={{ opacity: 0, y: 150 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{
+        duration: 1.5,
+        delay: 0.3,
+        type: "spring",
+        stiffness: 100,
+        damping: 10,
+      }}
       id="sobre-mi"
-      className="mx-auto mt-4 bg-fondo rounded-3xl md:mx-24 xl:mx-80 md:mt-6"
+      className=" mx-6 mt-10 md:mt-14 bg-fondo rounded-3xl md:mx-24 xl:mx-80 "
     >
       <div className=" rounded bg-fondo overflow-hidden shadow-lg">
         <div className="  px-6 py-4">
-          <div className=" text-center font-bold text-xl mb-2 color-letras-principales">
+          <div className=" text-center font-bold text-xl mb-2  md:text-2xl color-letras-principales">
             Sobre Mi
           </div>
 
@@ -37,7 +47,7 @@ function SobreMi() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
 
