@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import { Nextjsicono, Postgree, Prisma } from "../iconos/svg";
 import Turismo from "../imagenes/turismo.webp";
+import Link from "next/link";
+
 import Image from "next/image";
 function Proyectos() {
   return (
@@ -31,10 +33,19 @@ function Proyectos() {
                   height={150}
                   alt="Fernando Whiteley"
                 />
+                <div className="text-center  mt-4 ">
+                  <Link
+                    className="inline-block px-6 py-2 text-white font-semibold bg-gradient-to-r from-blue-500 to-indigo-600 rounded-full shadow-md hover:shadow-lg hover:scale-105 transition-transform duration-300"
+                    href="proyectos/turismoWhiteley"
+                  >
+                    Demo
+                  </Link>
+                </div>
               </div>
+
               <div className="m-auto">
                 {" "}
-                <ul className="mt-6 space-y-4 text-sm text-white md:text-xl">
+                <ul className="mt-6 space-y-4 text-sm text-white md:text-lg">
                   <li className="flex items-center gap-2">
                     <span className="text-green-400">✔</span>
                     Creador y desarrollador del proyecto turismowhiteley.cl.
@@ -50,7 +61,7 @@ function Proyectos() {
                     imprevistas.
                   </li>
                   <li className="flex items-center gap-2">
-                    <span className="text-green-400">✔</span>
+                    <span className="text-green-400 ">✔</span>
                     Coordinador de rutas de transporte desde y hacia el
                     aeropuerto.
                   </li>
@@ -58,15 +69,15 @@ function Proyectos() {
               </div>
             </div>
           </div>
-          <div className="px-6 pt-4 pb-2 flex justify-center">
-            <span className="flex max-w-28 items-center transition-transform duration-300 hover:scale-105 hover:shadow-inner hover:shadow-white/20 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              <Nextjsicono></Nextjsicono> <p className="ml-2">Nextjs</p>
+          <div className="px-6 pt-4 pb-2 flex flex-wrap justify-center gap-2">
+            <span className="flex items-center max-w-24 max-h-7 md:max-w-28 md:max-h-12 transition-transform duration-300 hover:scale-105 hover:shadow-inner hover:shadow-white/20 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+              <Nextjsicono /> <p className="ml-2">Nextjs</p>
             </span>
-            <span className="flex max-w-32 items-center transition-transform duration-300 hover:scale-105 hover:shadow-inner hover:shadow-white/20 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              <Postgree></Postgree> <p className="ml-2">Postgre</p>
+            <span className="flex items-center max-w-28 max-h-7 md:max-w-32 md:max-h-12  transition-transform duration-300 hover:scale-105 hover:shadow-inner hover:shadow-white/20 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+              <Postgree /> <p className="ml-2">Postgre</p>
             </span>
-            <span className="flex max-w-28 items-center transition-transform duration-300 hover:scale-105 hover:shadow-inner hover:shadow-white/20 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
-              <Prisma></Prisma> <p className="ml-2">Prisma</p>
+            <span className="flex items-center max-w-24 max-h-7 md:max-w-28 md:max-h-12 transition-transform duration-300 hover:scale-105 hover:shadow-inner hover:shadow-white/20 bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700">
+              <Prisma /> <p className="ml-2">Prisma</p>
             </span>
           </div>
         </div>

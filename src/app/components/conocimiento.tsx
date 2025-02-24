@@ -7,7 +7,7 @@ function Conocimiento() {
   return (
     <motion.section
       id="conocimiento"
-      className="mx-6 mt-10 md:mt-14 bg-fondo rounded-3xl md:mx-24 xl:mx-80  p-6 shadow-lg max-h-[400px] overflow-y-auto"
+      className="mx-6 mt-10 md:mt-14 bg-fondo rounded-3xl md:mx-24 xl:mx-80"
       initial={{ opacity: 0, scale: 0.8 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: false }}

@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-//import proImagen from "../imagenes/pro.webp";
+import proImagen from "../imagenes/yo.webp";
 import { motion } from "framer-motion";
 function Presentacion() {
   return (
@@ -15,7 +15,7 @@ function Presentacion() {
       >
         <Image
           className="w-48 h-48 rounded-full object-cover border-4 border-foto shadow-lg"
-          src={""}
+          src={proImagen}
           width={250}
           height={250}
           alt="Fernando Whiteley"

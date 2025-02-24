@@ -23,25 +23,27 @@ function SobreMi() {
           </div>
 
           <div className="m-auto">
-            <ul className="mt-6 space-y-4 text-sm text-balance text-white md:text-xl">
-              <li className="flex items-center mt-2 gap-4 text-sm md:text-xl">
-                <span className="text-green-400">✔</span> Ingeniero informático
-                con experiencia en desarrollo de software y sistemas
-                informáticos.
+            <ul className="mt-6 space-y-4 text-sm text-pretty text-white md:text-xl">
+              <li className="flex items-center mt-2 gap-4 text-sm md:text-lg">
+                <span className="text-green-400">✔</span> Egresado de Ingeniero
+                informático de Inacap Chile, con experiencia en desarrollo de
+                software y sistemas, análisis de datos y optimización de
+                procesos informáticos.
               </li>
-              <li className="flex items-center  gap-4 text-sm md:text-xl">
-                <span className="text-green-400 ">✔</span> Capacidad para
-                resolver problemas y adaptarse a nuevas tecnologías.
+              <li className="flex items-center  gap-4 text-sm md:text-lg">
+                <span className="text-green-400 ">✔</span> Competente en base de
+                datos SQL, Postgre, Mongodb, MySQL.
               </li>
-              <li className="flex items-center gap-4 text-sm md:text-xl">
-                <span className="text-green-400">✔</span> Demostrada habilidad
-                para trabajar en equipo, colaborar con colegas y contribuir a un
-                entorno de trabajo colaborativo.
+              <li className="flex items-center gap-4 text-sm md:text-lg">
+                <span className="text-green-400">✔</span> Habilidad para
+                trabajar en equipo, comunicación efectiva, adaptabilidad y
+                resolución de problemas, lo que me permite ofrecer distintas
+                soluciones orientada a los resultados.
               </li>
-              <li className="flex items-center gap-4 text-sm md:text-xl">
+              <li className="flex items-center gap-4 text-sm md:text-lg">
                 <span className="text-green-400">✔</span> Buscando oportunidades
-                para aplicar mis habilidades técnicas y contribuir al
-                crecimiento de una empresa.
+                para aplicar mis habilidades técnicas y contribuir en proyectos
+                de tecnología e innovacion. crecimiento de una empresa.
               </li>
             </ul>
           </div>
